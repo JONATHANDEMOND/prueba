@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Academia de Idiomas</title>
+    <link rel="stylesheet" href="/styles/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        main {
+            padding: 20px;
+        }
+        section {
+            margin-bottom: 20px;
+        }
+        h2 {
+            color: #333;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            height: 10%;
+        }
+        .pie {
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #e3f2fd;">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Navbar</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="/">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/pages/productos.html">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/pages/nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/pages/contacto.html">Contactenos</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+       
+    </header>
+    <main>
+        <header>
+            <h1>Contacto</h1>
+        </header>
+        <section>
+            <h2>Información de la Academia</h2>
+            <p><strong>Dirección:</strong> Calle Amazonas, Número 1234, Ciudad Ficticia</p>
+            <p><strong>Teléfono:</strong> +593995373094</p>
+            <p><strong>Correo Electrónico:</strong> info@academiaidiomasficticia.com</p>
+        </section>
+        <section>
+            <h2>Formulario de Inscripción</h2>
+            <form action="enviar_formulario.php" method="POST">
+                <label for="nombre">Nombre:</label><br>
+                <input type="text" id="nombre" name="nombre"><br>
+                <label for="email">Correo Electrónico:</label><br>
+                <input type="email" id="email" name="email"><br>
+                <label for="mensaje">Mensaje:</label><br>
+                <textarea id="mensaje" name="mensaje" rows="4" cols="50"></textarea><br>
+                <input type="submit" value="Enviar">
+            </form>
+        </section>
+        <section>
+            <h2>Ubicación</h2>
+            <div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2821.1842386917556!2d-78.54708569522215!3d-0.31762912203959476!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sec!4v1709079583048!5m2!1ses-419!2sec" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="row container">
+            <section class="col-md-2">
+                <h6 class="pie">Nombre del Estudiante</h6>
+                <p>Jonathan Barros</p>
+            </section>
+            <section class="col-md-2">
+                <h6 class="pie">Pagina Implementada</h6>
+                <p>ESCUELA DE IDIOMAS</p>
+            </section>
+           
+                <section class="col-md-2">
+                    <h6 class="pie">Telefonos</h6>
+                      <a >593995373094</a>
+                </section>
+                <section class="col-md-2">
+                    <h6 class="pie">Correos</h6>
+                    <h6>jou@yop.com</h6> 
+                </section>
+                <section class="col-md-2">
+                    <h6 class="pie">Direccion</h6>
+                    <h6>jou@yop.com</h6> 
+                </section>
+           
+        </div>
+    </footer>
+</body>
+</html>
